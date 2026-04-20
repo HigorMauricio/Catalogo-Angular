@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './hero.css',
 })
 export class Hero {
-  rolar() {
-    const elemento = document.getElementById('colecao');
+  rolar(idSecao: string) {
+    const elemento = document.getElementById(idSecao);
     if(elemento){
       elemento.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
