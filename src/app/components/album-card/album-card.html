@@ -1,23 +1,48 @@
-<div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
-  
-  <div class="relative aspect-square overflow-hidden bg-zinc-200">
-    <img [src]="album.coverUrl" [alt]="album.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+<div class="relative w-full [perspective:1000px] group">
 
-    @if (album.isClassic) {
-      <div class="absolute top-3 right-3 bg-amber-500 text-neutral-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
-        Clássico
+  <div class="w-full duration-700 relative [transform-style:preserve-3d] transition-transform" [class]="isFlipped ? '[transform:rotateY(180deg)]' : ''">
+
+    <div class="relative w-full bg-white rounded-lg shadow-md overflow-hidden backface-hidden cursor-pointer group-hover:shadow-xl transition-shadow">
+      
+      <div class="relative aspect-square overflow-hidden bg-zinc-200">
+        <img [src]="album.coverUrl" [alt]="album.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        
+        @if (album.isClassic) {
+          <div class="absolute top-3 right-3 bg-amber-500 text-neutral-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
+            Clássico
+          </div>
+        }
       </div>
-    }
-  </div>
 
-  <div class="p-5">
-    <h3 class="text-xl font-bold text-zinc-900 truncate">{{ album.title }}</h3>
-    <p class="text-zinc-600 font-medium truncate">{{ album.artist }}</p>
-    
-    <div class="mt-4 flex justify-between items-center">
-      <span class="text-sm text-zinc-400 font-semibold">{{ album.releaseYear }}</span>
-      <button class="text-amber-600 hover:text-amber-700 font-bold text-sm uppercase">Detalhes</button>
+      <div class="p-5">
+        <h3 class="text-xl font-bold text-zinc-900 truncate">{{ album.title }}</h3>
+        <p class="text-zinc-600 font-medium truncate">{{ album.artist }}</p>
+        
+        <div class="mt-4 flex justify-between items-center">
+          <span class="text-sm text-zinc-400 font-semibold">{{ album.releaseYear }}</span>
+          <button (click)="virarCartao()" class="text-amber-600 hover:text-amber-700 font-bold text-sm uppercase">Detalhes</button>
+        </div>
+      </div>
     </div>
-  </div>
 
+    <div class="absolute inset-0 w-full h-full bg-zinc-900 text-white rounded-lg shadow-md overflow-hidden backface-hidden [transform:rotateY(180deg)] p-6 flex flex-col justify-between">
+      
+      <div>
+        <h3 class="text-2xl font-black text-amber-500 mb-1">{{ album.title }}</h3>
+        <p class="text-zinc-400 font-medium mb-6">{{ album.artist }}</p>
+        
+        <div class="space-y-3">
+          <p class="text-sm border-b border-zinc-700 pb-2"><span class="font-bold text-zinc-300">Ano:</span> {{ album.releaseYear }}</p>
+          <p class="text-sm border-b border-zinc-700 pb-2"><span class="font-bold text-zinc-300">Gênero:</span> {{ album.gender }}</p>
+          <p class="text-sm"><span class="font-bold text-zinc-300">Gravadora:</span> {{ album.label }}</p>
+        </div>
+      </div>
+
+      <button (click)="virarCartao()" class="w-full border border-amber-500 text-amber-500 py-3 rounded hover:bg-amber-500 hover:text-neutral-950 transition-colors uppercase font-bold tracking-widest text-sm mt-4">
+        Voltar para a Capa
+      </button>
+
+    </div>
+
+  </div>
 </div>

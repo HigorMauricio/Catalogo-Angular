@@ -9,4 +9,11 @@ import { Album } from '../../models/album';
 })
 export class AlbumCard {
   @Input({required: true }) album!: Album;
+
+  isFlipped = false;
+
+  virarCartao() {
+    this.isFlipped = !this.isFlipped;
+  }
+  
 }

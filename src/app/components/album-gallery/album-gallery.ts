@@ -16,6 +16,8 @@ export class AlbumGallery {
       title: 'Pray for Paris',
       artist: 'Westside Gunn',
       releaseYear: 2020,
+      gender: 'Rap/Boom Bap',
+      label: 'Griselda Records',
       coverUrl: 'covers/pray-for-paris-cover.jpg',
       isClassic: true
     },
@@ -24,6 +26,8 @@ export class AlbumGallery {
       title: 'Alfredo',
       artist: 'Freddie Gibbs & The Alchemist',
       releaseYear: 2020,
+      gender: 'Rap/Boom Bap',
+      label: 'ESGN Records',
       coverUrl: 'covers/alfredo-cover.png',
       isClassic: false
     },
@@ -32,6 +36,8 @@ export class AlbumGallery {
       title: 'Clube da Esquina',
       artist: 'Milton Nascimento & Lô Borges',
       releaseYear: 1972,
+      gender: 'MPB',
+      label: 'Odeon Records',
       coverUrl: 'covers/clube-da-esquina-cover.jpg',
       isClassic: true
     },
@@ -40,6 +46,8 @@ export class AlbumGallery {
       title: 'MM..FOOD',
       artist: 'MF DOOM',
       releaseYear: 2004,
+      gender: 'Rap/Boom Bap',
+      label: 'Rhymesayers Entertainment',
       coverUrl: 'covers/mm-food-cover.jpg',
       isClassic: false
     },
@@ -48,6 +56,8 @@ export class AlbumGallery {
       title: 'DeBÍ TiRAR MáS FOToS',
       artist: 'Bad Bunny',
       releaseYear: 2025,
+      gender: 'Reggaeton',
+      label: 'Rimas Entertainment',
       coverUrl: 'covers/debi-tirar-mas-fotos-cover.jpeg',
       isClassic: false
     },
@@ -56,9 +66,10 @@ export class AlbumGallery {
       title: 'Castelos e Ruínas',
       artist: 'BK',
       releaseYear: 2016,
+      gender: 'Rap',
+      label: 'Pirâmide Perdida Records',
       coverUrl: 'covers/castelo-ruinas-cover.png',
       isClassic: false
-
     }
   ]
 }
