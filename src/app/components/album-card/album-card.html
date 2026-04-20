@@ -1,0 +1,23 @@
+<div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+  
+  <div class="relative aspect-square overflow-hidden bg-zinc-200">
+    <img [src]="album.coverUrl" [alt]="album.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+
+    @if (album.isClassic) {
+      <div class="absolute top-3 right-3 bg-amber-500 text-neutral-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
+        Clássico
+      </div>
+    }
+  </div>
+
+  <div class="p-5">
+    <h3 class="text-xl font-bold text-zinc-900 truncate">{{ album.title }}</h3>
+    <p class="text-zinc-600 font-medium truncate">{{ album.artist }}</p>
+    
+    <div class="mt-4 flex justify-between items-center">
+      <span class="text-sm text-zinc-400 font-semibold">{{ album.releaseYear }}</span>
+      <button class="text-amber-600 hover:text-amber-700 font-bold text-sm uppercase">Detalhes</button>
+    </div>
+  </div>
+
+</div>
