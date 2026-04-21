@@ -11,6 +11,7 @@ export class AlbumCard {
   @Input({required: true }) album!: Album;
 
   isFlipped = false;
+  isPlaying = false;
 
   virarCartao() {
     this.isFlipped = !this.isFlipped;
@@ -18,6 +19,10 @@ export class AlbumCard {
 
   toggleClassico() {
     this.album.isClassic = !this.album.isClassic
+  }
+
+  playSong() {
+    this.isPlaying = !this.isPlaying;
   }
   
 }
