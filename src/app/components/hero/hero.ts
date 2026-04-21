@@ -17,13 +17,20 @@ export class Hero {
 
   slides: Slide[] = [
     {
-      image: 'background/tasha-tracie-background.jpg'
+      image: 'background/tasha-tracie-background.jpg',
+      title: 'Perca-se na Música'
     },
     {
-      image: 'background/kendrick-background.jpg'
+      image: 'background/kendrick-background.jpg',
+      title: 'A arte da Rima'
     },
     {
-      image: 'background/djavan-background.jpg'
+      image: 'background/djavan-background.jpg',
+      title: 'A Cultura nas Palavras'
+    },
+    {
+      image: 'background/pinkpantheress-background.jpg',
+      title: 'Poesia Sofisticada'
     }
   ]
 
