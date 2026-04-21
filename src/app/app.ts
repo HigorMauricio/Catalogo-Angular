@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { Hero } from './components/hero/hero'
 import { AlbumGallery } from './components/album-gallery/album-gallery';
+import { Footer } from "./components/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Hero, AlbumGallery],
+  imports: [RouterOutlet, Header, Hero, AlbumGallery, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
