@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Album } from '../../models/album';
+import { AudioService } from '../../services/audioService';
 
 @Component({
   selector: 'app-album-card',
@@ -10,19 +11,21 @@ import { Album } from '../../models/album';
 export class AlbumCard {
   @Input({required: true }) album!: Album;
 
-  isFlipped = false;
-  isPlaying = false;
+  audioService = inject(AudioService);
 
-  virarCartao() {
+  isFlipped = false;
+
+  virarCartao() : void {
     this.isFlipped = !this.isFlipped;
   }
 
-  toggleClassico() {
+  toggleClassico() : void {
     this.album.isClassic = !this.album.isClassic
   }
-
-  playSong() {
-    this.isPlaying = !this.isPlaying;
-  }
   
+  playSong() : void {
+    if(!this.album.audioUrl) return;
+    
+    this.audioService.toggleAudio(this.album.id, this.album.audioUrl);
+  }
 }

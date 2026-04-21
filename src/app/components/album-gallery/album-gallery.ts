@@ -19,6 +19,7 @@ export class AlbumGallery {
       gender: 'Rap/Boom Bap',
       label: 'Griselda Records',
       coverUrl: 'covers/pray-for-paris-cover.jpg',
+      audioUrl: 'music/le-djoliba.mp3',
       isClassic: true
     },
     {
@@ -29,6 +30,7 @@ export class AlbumGallery {
       gender: 'Rap/Boom Bap',
       label: 'ESGN Records',
       coverUrl: 'covers/alfredo-cover.png',
+      audioUrl: 'music/look-at-me.mp3',
       isClassic: false
     },
     {
@@ -39,6 +41,7 @@ export class AlbumGallery {
       gender: 'MPB',
       label: 'Odeon Records',
       coverUrl: 'covers/clube-da-esquina-cover.jpg',
+      audioUrl: 'music/um-girassol-da-cor-do-seu-cabelo.mp3',
       isClassic: true
     },
     {
@@ -49,6 +52,7 @@ export class AlbumGallery {
       gender: 'Rap/Boom Bap',
       label: 'Rhymesayers Entertainment',
       coverUrl: 'covers/mm-food-cover.jpg',
+      audioUrl: 'music/deep-fried-frenz.mp3',
       isClassic: false
     },
     {
@@ -59,6 +63,7 @@ export class AlbumGallery {
       gender: 'Reggaeton',
       label: 'Rimas Entertainment',
       coverUrl: 'covers/debi-tirar-mas-fotos-cover.jpeg',
+      audioUrl: 'covers/cafe-con-ron.mp3',
       isClassic: false
     },
     {
@@ -69,6 +74,7 @@ export class AlbumGallery {
       gender: 'Rap',
       label: 'Pirâmide Perdida Records',
       coverUrl: 'covers/castelo-ruinas-cover.png',
+      audioUrl: 'covers/amores-vicios-e-obsessoes.mp3',
       isClassic: false
     },
     {
@@ -79,6 +85,7 @@ export class AlbumGallery {
       gender: 'Pop',
       label: 'XO',
       coverUrl: 'covers/hurry-up-tomorrow-cover.jpeg',
+      audioUrl: 'baptized-in-fear.mp3',
       isClassic: false
     }
   ]

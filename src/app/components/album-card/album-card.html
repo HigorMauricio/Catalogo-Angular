@@ -40,7 +40,7 @@
 
       <div class="flex flex-col items-center">
         <div class="flex flex-row content-between w-full">
-          <img [src]="isPlaying ? 'icons/pause.png' : 'icons/play.png'" alt="tocar musica" class="w-8 h-8 cursor-pointer hover:scale-125 transition-transform duration-300"
+          <img [src]="audioService.isAlbumPlaying(album.id) ? 'icons/pause.png' : 'icons/play.png'" alt="tocar musica" class="w-8 h-8 cursor-pointer hover:scale-125 transition-transform duration-300"
           (click)="playSong()">
           <img [src]="album.isClassic ? 'icons/estrela-cheia.png' : 'icons/estrela-vazia.png'" alt="marcar como classico" class="w-8 h-8 cursor-pointer hover:scale-125 transition-transform duration-300 ml-auto"
           (click)="toggleClassico()">

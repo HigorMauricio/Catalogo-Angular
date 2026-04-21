@@ -6,5 +6,6 @@ export interface Album {
     gender: string;
     label: string;
     coverUrl: string;
+    audioUrl: string | null;
     isClassic: boolean;
 }
