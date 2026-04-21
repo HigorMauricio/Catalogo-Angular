@@ -15,5 +15,9 @@ export class AlbumCard {
   virarCartao() {
     this.isFlipped = !this.isFlipped;
   }
+
+  toggleClassico() {
+    this.album.isClassic = !this.album.isClassic
+  }
   
 }

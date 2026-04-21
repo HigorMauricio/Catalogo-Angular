@@ -70,6 +70,16 @@ export class AlbumGallery {
       label: 'Pirâmide Perdida Records',
       coverUrl: 'covers/castelo-ruinas-cover.png',
       isClassic: false
+    },
+    {
+      id: '7',
+      title: 'Hurry Up Tomorrow',
+      artist: 'The Weekend',
+      releaseYear: 2025,
+      gender: 'Pop',
+      label: 'XO',
+      coverUrl: 'covers/hurry-up-tomorrow-cover.jpeg',
+      isClassic: false
     }
   ]
 }
