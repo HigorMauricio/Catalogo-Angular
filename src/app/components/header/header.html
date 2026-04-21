@@ -5,10 +5,34 @@
       <h1 class="text-lg md:text-2xl font-black tracking-wider">Catálogo de Albuns</h1>
     </div>
     
-    <div class="flex gap-6 font-medium">
+    <div class="hidden md:flex gap-6 font-medium">
       <a class="hover:text-amber-500 transition-colors cursor-pointer">Home</a>
       <a class="hover:text-amber-500 transition-colors cursor-pointer" (click)="rolar('colecao')">Discografia</a>
       <a class="hover:text-amber-500 transition-colors cursor-pointer">Pesquisar</a>
+    </div>
+
+    <button class="md:hidden text-white hover:text-amber-500 transition-colors cursor-pointer" (click)="toggleMenu()">
+      @if(!isMenuOpen) {
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      } @else{
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      }
+    </button>
+
+    <div 
+      class="md:hidden absolute top-full left-0 w-full bg-neutral-950/50 flex flex-col items-center transition-all duration-300 overflow-hidden"
+      [class.max-h-0]="!isMenuOpen"
+      [class.max-h-[300px]]="isMenuOpen"
+      [class.py-0]="!isMenuOpen"
+      [class.py-4]="isMenuOpen">
+      
+      <a class="w-full text-center py-3 text-white hover:text-amber-500 transition-colors cursor-pointer" (click)="toggleMenu()">Home</a>
+      <a class="w-full text-center py-3 text-white hover:text-amber-500 transition-colors cursor-pointer" (click)="rolar('colecao'); toggleMenu()">Discografia</a>
+      <a class="w-full text-center py-3 text-white hover:text-amber-500 transition-colors cursor-pointer" (click)="toggleMenu()">Pesquisar</a>
     </div>
 
   </div>

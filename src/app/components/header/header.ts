@@ -8,10 +8,17 @@ import { Component } from '@angular/core';
 })
 
 export class Header {
+
+  isMenuOpen = false;
+    
   rolar(idSecao: string) {
     const elemento = document.getElementById(idSecao);
     if(elemento){
       elemento.scrollIntoView({behavior: 'smooth', block: 'start'});
-    }
+    }  
+  }
+
+  toggleMenu(): void{
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }
