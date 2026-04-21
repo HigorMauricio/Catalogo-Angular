@@ -63,7 +63,7 @@ export class AlbumGallery {
       gender: 'Reggaeton',
       label: 'Rimas Entertainment',
       coverUrl: 'covers/debi-tirar-mas-fotos-cover.jpeg',
-      audioUrl: 'covers/cafe-con-ron.mp3',
+      audioUrl: 'music/cafe-con-ron.mp3',
       isClassic: false
     },
     {
@@ -74,7 +74,7 @@ export class AlbumGallery {
       gender: 'Rap',
       label: 'Pirâmide Perdida Records',
       coverUrl: 'covers/castelo-ruinas-cover.png',
-      audioUrl: 'covers/amores-vicios-e-obsessoes.mp3',
+      audioUrl: 'music/amores-vicios-e-obsessoes.mp3',
       isClassic: false
     },
     {
@@ -85,8 +85,19 @@ export class AlbumGallery {
       gender: 'Pop',
       label: 'XO',
       coverUrl: 'covers/hurry-up-tomorrow-cover.jpeg',
-      audioUrl: 'baptized-in-fear.mp3',
+      audioUrl: 'music/baptized-in-fear.mp3',
       isClassic: false
+    },
+    {
+      id: '8',
+      title: 'Serena & Venus',
+      artist: 'Tasha & Tracie',
+      releaseYear: 2025,
+      gender: 'Rap/ Funk',
+      label: 'EHXIS',
+      coverUrl: 'covers/serena-e-venus-cover.jpeg',
+      audioUrl: 'music/cara-fechada.mp3',
+      isClassic: false,
     }
   ]
 }
