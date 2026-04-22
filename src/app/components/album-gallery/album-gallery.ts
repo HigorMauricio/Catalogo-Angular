@@ -246,6 +246,28 @@ export class AlbumGallery {
       coverUrl: 'covers/serena-e-venus-cover.jpeg',
       audioUrl: 'music/cara-fechada.mp3',
       isClassic: false,
+    },
+    {
+      id: '9',
+      title: 'Fancy That',
+      artist: 'PinkPantheress',
+      releaseYear: 2025,
+      gender: 'Pop/ UK garage',
+      label: 'Warner Records',
+      tracklist: [
+        "Illegal",
+        "Girl Like Me",
+        "Tonight",
+        "Stars",
+        "Intermission",
+        "Noises",
+        "Nice to Know You",
+        "Stateside",
+        "Romeo"
+      ],
+      coverUrl: 'covers/fancy-that-cover.jpg',
+      audioUrl: 'music/noises.mp3',
+      isClassic: false,
     }
   ]
 }
