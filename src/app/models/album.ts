@@ -5,6 +5,7 @@ export interface Album {
     releaseYear: number;
     gender: string;
     label: string;
+    tracklist: string[] | null;
     coverUrl: string;
     audioUrl: string | null;
     isClassic: boolean;
