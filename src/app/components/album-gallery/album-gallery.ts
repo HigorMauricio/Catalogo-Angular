@@ -176,7 +176,7 @@ export class AlbumGallery {
       ],
       coverUrl: 'covers/castelo-ruinas-cover.png',
       audioUrl: 'music/amores-vicios-e-obsessoes.mp3',
-      isClassic: false
+      isClassic: true
     },
     {
       id: '7',
